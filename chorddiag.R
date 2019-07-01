@@ -30,7 +30,9 @@ data_clean <- data %>%
 data_matrix <- as.matrix(data_clean[,3])
 row.names(data_matrix) <- as.array(data_clean$country)
 
-groupColors <- c("#7DAA92", "#80FFEC", "#D6EADF", 
+groupColors <- c("#482173FF", "#7DAA92", "#80FFEC", "#D6EADF", 
+                 "#440154FF", "#482677FF","#2D708EFF", "#238A8DFF", 
+                 "#55C667FF", "#95D840FF","#FDE725FF", "#39568CFF", 
                  "#FF7F11", "#BEB7A4", "#05A8AA") 
 
 chorddiag(data_matrix, type = "bipartite", 
